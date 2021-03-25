@@ -1,0 +1,32 @@
+<h1>Python Interview Questions</h1>
+<h2><a id="user-content-q-how-can-you-improve-the-following-code" class="anchor" href="https://github.com/surendranaidu/python_logic_interview_questions-#q-how-can-you-improve-the-following-code" aria-hidden="true"></a>Q. How can you improve the following code?</h2>
+<div class="highlight highlight-source-python">
+<pre><span class="pl-k">import</span> <span class="pl-s1">string</span>
+
+<span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span>
+<span class="pl-k">for</span> <span class="pl-s1">letter</span> <span class="pl-c1">in</span> <span class="pl-s1">string</span>.<span class="pl-s1">letters</span>:
+    <span class="pl-en">print</span>(<span class="pl-s">"The letter at index %i is %s"</span> <span class="pl-c1">%</span> (<span class="pl-s1">i</span>, <span class="pl-s1">letter</span>))
+    <span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-s1">i</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span></pre>
+</div>
+<p>Bonus points for mentioning&nbsp;<code>enumerate</code>&nbsp;and use of&nbsp;<code>str.format</code>.</p>
+<div align="right"><strong><a href="https://github.com/surendranaidu/python_logic_interview_questions-#">↥ back to top</a></strong></div>
+<h2><a id="user-content-q-what-is-python-particularly-good-for-when-is-using-python-the-right-choice-for-a-project" class="anchor" href="https://github.com/surendranaidu/python_logic_interview_questions-#q-what-is-python-particularly-good-for-when-is-using-python-the-right-choice-for-a-project" aria-hidden="true"></a>Q. What is Python particularly good for? When is using Python the "right choice" for a project?</h2>
+<p>Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.</p>
+<p>Python is a high-level general-purpose programming language that can be applied to many different classes of problems.</p>
+<p>The language comes with a large standard library that covers areas such as string processing like regular expressions, Unicode, calculating differences between files, Internet protocols like HTTP, FTP, SMTP, XML-RPC, POP, IMAP, CGI programming, software engineering like unit testing, logging, profiling, parsing Python code, and operating system interfaces like system calls, file systems, TCP/IP sockets.</p>
+<p>Although likes and dislikes are highly personal, a developer who is "worth his or her salt" will highlight features of the Python language that are generally considered advantageous (which also helps answer the question of what Python is "particularly good for". Some of the more common valid answers to this question include:</p>
+<ul>
+<li>Ease of use and ease of refactoring, thanks to the flexibility of Python's syntax, which makes it especially useful for rapid prototyping.</li>
+<li>More compact code, thanks again to Python's syntax, along with a wealth of functionally-rich Python libraries (distributed freely with most Python language implementations).</li>
+<li>A dynamically-typed and strongly-typed language, offering the rare combination of code flexibility while at the same time avoiding pesky implicit-type-conversion bugs.</li>
+<li>It's free and open source! Need we say more?</li>
+</ul>
+<p>With regard to the question of when using Python is the "right choice" for a project, the complete answer also depends on a number of issues orthogonal to the language itself, such as prior technology investment, skill set of the team, and so on. Although the question as stated above implies interest in a strictly technical answer, a developer who will raise these additional issues in an interview will always "score more points" with me since it indicates an awareness of, and sensitivity to, the "bigger picture" (i.e., beyond just the technology being employed). Conversely, a response that Python is always the right choice is a clear sign of an unsophisticated developer.</p>
+<div align="right"><strong><a href="https://github.com/surendranaidu/python_logic_interview_questions-#">↥ back to top</a></strong></div>
+<h2><a id="user-content-q-what-are-some-drawbacks-of-the-python-language" class="anchor" href="https://github.com/surendranaidu/python_logic_interview_questions-#q-what-are-some-drawbacks-of-the-python-language" aria-hidden="true"></a>Q. What are some drawbacks of the Python language?</h2>
+<p>For starters, if you know a language well, you know its drawbacks, so responses such as "there's nothing I don't like about it" or "it has no drawbacks" are very telling indeed.</p>
+<p>The two most common valid answers to this question (by no means intended as an exhaustive list) are:</p>
+<ul>
+<li>The Global Interpreter Lock (GIL). CPython (the most common Python implementation) is not fully thread safe. In order to support multi-threaded Python programs, CPython provides a global lock that must be held by the current thread before it can safely access Python objects. As a result, no matter how many threads or processors are present, only one thread is ever being executed at any given time. In comparison, it is worth noting that the PyPy implementation discussed earlier in this article provides a stackless mode that supports micro-threads for massive concurrency.</li>
+<li>Execution speed. Python can be slower than compiled languages since it is interpreted. (Well, sort of. See our earlier discussion on this topic.)</li>
+</ul>
